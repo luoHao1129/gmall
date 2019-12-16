@@ -1,10 +1,14 @@
 package com.zg.gmall.user.bean;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.Date;
 
 public class UmsMember {
 
-
+    @Id  //标记id为主键
+    @GeneratedValue(strategy = GenerationType.IDENTITY)//增加主键KEY 返回策略
     private String id;
     private String memberLevelId;
     private String username;
