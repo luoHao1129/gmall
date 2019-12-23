@@ -1,6 +1,5 @@
 package com.zg.gmall.user.service.impl;
 
-import com.sun.deploy.panel.IProperty;
 import com.zg.gmall.user.bean.UmsMember;
 import com.zg.gmall.user.bean.UmsMemberReceiveAddress;
 import com.zg.gmall.user.mapper.UmsMemberReceiveAddressMapper;
@@ -33,8 +32,12 @@ public class UserServiceImpl implements UserService {
         //封装的参数对象
         UmsMemberReceiveAddress umsMemberReceiveAddress = new UmsMemberReceiveAddress();
         umsMemberReceiveAddress.setMemberId(memberId);
-//        List<UmsMemberReceiveAddress> umsMemberReceiveAddresses = umsMemberReceiveAddressMapper.selectByExample(umsMemberReceiveAddress);
         List<UmsMemberReceiveAddress> umsMemberReceiveAddresses = umsMemberReceiveAddressMapper.select(umsMemberReceiveAddress);
+
+//        Example example = new Example(UmsMemberReceiveAddress.class);
+//        example.createCriteria().andEqualTo("memberId",memberId);
+//        List<UmsMemberReceiveAddress> umsMemberReceiveAddresses = umsMemberReceiveAddressMapper.selectByExample(example);
+
 
         return umsMemberReceiveAddresses;
     }
