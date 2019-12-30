@@ -5,7 +5,7 @@
 
 <!-- 映射文件 -->
 <mapper namespace="com.zg.gmall.user.mapper.UserMapper">
-    <select id="selectAllUser" resultType="com.zg.gmall.user.bean.UmsMember">
+    <select id="selectAllUser" resultType="com.zg.gmall.bean.UmsMember">
         select um.* from ums_member um
     </select>
 

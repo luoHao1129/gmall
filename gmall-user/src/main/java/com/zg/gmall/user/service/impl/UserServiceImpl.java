@@ -1,15 +1,15 @@
 package com.zg.gmall.user.service.impl;
 
-import com.zg.gmall.user.bean.UmsMember;
-import com.zg.gmall.user.bean.UmsMemberReceiveAddress;
+import com.zg.gmall.bean.UmsMember;
+import com.zg.gmall.bean.UmsMemberReceiveAddress;
+import com.zg.gmall.service.UserService;
 import com.zg.gmall.user.mapper.UmsMemberReceiveAddressMapper;
 import com.zg.gmall.user.mapper.UserMapper;
-import com.zg.gmall.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import tk.mybatis.mapper.entity.Example;
 
-import javax.swing.plaf.basic.BasicHTML;
+
+
 import java.util.List;
 
 @Service
